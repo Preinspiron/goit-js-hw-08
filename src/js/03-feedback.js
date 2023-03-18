@@ -42,7 +42,7 @@ const onFormSubmit = e => {
   localStorage.removeItem(LOCAL_TEMP_STORAGE);
 };
 
-const throttledFunc = throttle(onFormInput, 2000);
+const throttledFunc = throttle(onFormInput, 500);
 
 formRef.addEventListener('input', throttledFunc);
 formRef.addEventListener('submit', onFormSubmit);
